@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.card-rows {
+  display: flex;
+}
+
+/* .book-cover {
+  min-height: 300px;
+} */
+
+.thumbnail {
+  position: absolute;
+  object-fit: cover;
+}
+
+.book-desc {
+  background-color: white;
+}
+
+.preview {
+  color: white;
+}
+
+.preview:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.save-icon {
+  padding-bottom: 2px;
+  height: 20px;
+  color: white;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+
+.btn-light {
+  margin-left: 10px;
+  background-color: white;
+  border: solid 1px lightgray;
+}
+
+.btn-warning,
+.btn-secondary,
+.btn-light {
+  margin-top: 10px;
+}
