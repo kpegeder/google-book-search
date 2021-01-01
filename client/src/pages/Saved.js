@@ -7,17 +7,28 @@ function Saved(props) {
   const [book, setBook] = useState([]);
 
   useEffect(() => {
+    savedBooks();
+  }, []);
+
+  function savedBooks() {
     API.return()
       .then((res) => {
         setBook(res.data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }
+
+  function handleDelete(event) {
+    event.preventDefault();
+    API.delete(this.id)
+      .then((res) => savedBooks())
+      .catch((err) => console.log(err));
+  }
 
   return (
     <div>
       <Jumbotron />
-      <SavedBooks results={book} />
+      <SavedBooks results={book} handleDelete={handleDelete} />
     </div>
   );
 }

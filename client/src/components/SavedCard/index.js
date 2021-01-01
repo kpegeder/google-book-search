@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Card(props) {
+function SavedCard(props) {
   return (
     <div className="container">
       <div className="row card-rows">
@@ -28,7 +28,7 @@ function Card(props) {
               <button
                 className="btn btn-light"
                 onClick={(event) => {
-                  props.handleSave(event);
+                  props.handleDelete(event);
                 }}
               >
                 Delete
@@ -44,4 +44,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default SavedCard;

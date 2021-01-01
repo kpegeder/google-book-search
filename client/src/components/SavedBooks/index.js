@@ -10,6 +10,7 @@ function SavedBooks(props) {
         return (
           <SavedCard
             key={book._id}
+            id={book._id}
             title={book.title}
             author={book.author}
             thumbnail={
@@ -19,6 +20,7 @@ function SavedBooks(props) {
             }
             description={book.description}
             link={book.link}
+            handleDelete={props.handleDelete}
           />
         );
       })}
