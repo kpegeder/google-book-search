@@ -36,7 +36,7 @@ function Card(props) {
             </div>
           </div>
           <h4>{props.title}</h4>
-          <h5>{props.author[0]}</h5>
+          <h5>{props.author ? props.author[0] : "Unknown"}</h5>
           <p>{props.description}</p>
         </div>
       </div>
