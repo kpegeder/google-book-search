@@ -5,11 +5,13 @@
 }
 
 .card-rows {
-  display: flex;
+  flex-wrap: nowrap !important;
 }
 
 .book-cover {
   text-align: center;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .book-desc {

@@ -8,14 +8,11 @@
   display: flex;
 }
 
-/* .book-cover {
-  min-height: 300px;
-} */
-
-.thumbnail {
+/* .thumbnail {
   position: absolute;
   object-fit: cover;
-}
+  
+} */
 
 .book-desc {
   background-color: white;

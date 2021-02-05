@@ -10,7 +10,10 @@ function SearchArea(props) {
           props.handleSearch(event);
         }}
       >
-        <div className="row justify-content-md-center">
+        <div
+          className="row justify-content-md-center"
+          style={{ textAlign: "center" }}
+        >
           <div className="col-md-10">
             <input
               type="text"
