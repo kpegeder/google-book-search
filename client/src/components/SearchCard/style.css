@@ -8,17 +8,13 @@
   display: flex;
 }
 
-/* .book-cover {
-  min-height: 300px;
-} */
-
-.thumbnail {
-  position: absolute;
-  object-fit: cover;
+.book-cover {
+  text-align: center;
 }
 
 .book-desc {
   background-color: white;
+  border-radius: 5px;
 }
 
 .preview {

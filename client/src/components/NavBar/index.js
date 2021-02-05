@@ -8,8 +8,12 @@ function NavBar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Search</Nav.Link>
-          <Nav.Link href="/saved">Saved</Nav.Link>
+          <Nav.Link href="/" style={{ color: "white" }}>
+            Search
+          </Nav.Link>
+          <Nav.Link href="/saved" style={{ color: "white" }}>
+            Saved
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
